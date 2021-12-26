@@ -1,6 +1,19 @@
-/* REACT is a JavaScript library for BUILDING USER INTERFACES
+/* REACT is a JavaScript library for BUILDING USER INTERFACES.
 
-COMPONENTS are reusable building blocks in your user interface.
+React is a client-side library, that means its a JS code that run on clients browsers. We use JS in the browser to manipulate web pages in the browser. React is all about building modern, reactive user interfaces for the web. It has declarative, component-focused approach. React can be used to control parts of HTML pages or entire pages. React can also be used to control the entire frontend of a web application. 
+
+Alternatives to React are Angular and Vue. 
+React.js is a lean and focused component-based UI library. Certain features (e.g. routing) are added via community packages.
+Angular is a complete component-based UI framework, packed with features. Uses TypeScript. Can be overkill for smaller projects.
+Vue.js is complete component-base UI framework, includes most core features. A bit less popular than React & Angular. Has more features than React and less than Angular.
+
+HOW TO GET STARTED WITH REACT
+npx create-react-app my-app-name    - create starting project
+cd my-app-name                      - change directory
+npm start                           - starts the developlment server
+
+
+COMPONENTS are reusable building blocks in your user interface. Custom components built by us ALWAYS start with CAPITAL LETTER.
 
 Components are REUSABLE and provide SEPARATION OF CONCERNS.
 
@@ -69,7 +82,7 @@ KEY Values are adding when we map array so that React knows where to place each 
 HOOKS always start with the prefix USE. Hooks work only on top level components. They dont work inside functions.
 
 useState purpose is to handle react data > when data changes re-render the UI. 
-useEffect will run when component is mounted and when state changes. Second argument is array of dependencies.
+useEffect will run when component is mounted and when state changes. Second argument is array of dependencies. Its main purpose is to manage side effects.
 
 useContext > share data without passing props. Consume value form nearest parent provider
 
