@@ -84,6 +84,8 @@ HOOKS always start with the prefix USE. Hooks work only on top level components.
 useState purpose is to handle react data > when data changes re-render the UI. 
 useEffect will run when component is mounted and when state changes. Second argument is array of dependencies. Its main purpose is to manage side effects.
 
+If in useEffect we return something we MUST RETURN a function, and this is called a CLEANUP FUNCTION. It runs before the code inside the useEffect is executed, so we can set up a clear timer for example, if we want to clear timer which runs each time when we enter some keystrokes.
+
 useContext > share data without passing props. Consume value form nearest parent provider
 
 useRef > mutable value does NOT re-render UI. Used to grab native HTML elements from JSX. When we need to grab element from the DOM.
