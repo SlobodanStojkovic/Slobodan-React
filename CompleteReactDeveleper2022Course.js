@@ -165,4 +165,15 @@ TypeScript: Objects => type and interface.
 INTERFACES golder rule > interfaces are exendable, very similar to class components. All Interfaces start with an I > ISearchBoxProps
 
 TYPES are usually used with functional programming style, while interfaces if we prefer object oriented style we use interfaces.
+
+
+With GRAPHQL and Apollo we actually REPLACE REDUX. Apollo CACHES the QUERY, not the actual items themselves.
+Application that uses Apollo doesnt need redux.
+Setting up GraphQL backend is complicated.
+
+Improving the performance of our code or optimizing our code should be done ONLY WHEN WE SEE A PERFORMANCE BOTTLENECK. If there are not any slowdowns in our code, there is no reason to start optimizing ahead of time. Reason for this is because those optimizations have a COST. They are tradeoffs. We trade off in begining so that we get much more optimized calls later on if certain optimized code is being called multiple times.
+
+useCallback - React is not memoizing the output of the function, it memoizes the function itself. Because it memoizes the function the React doesnt have to reinitialize this function on a render or rerender.
+
+useMemo - Memoizes the value inside the function, the output of the function. useMemo is primarely when we have expensive functions that need to recompute and they depend on these values inside our functional component. If we dont want those expensive functions to rerun during a rerender cycle we will use this hook.
 */
